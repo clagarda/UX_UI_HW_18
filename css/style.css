@@ -5,66 +5,95 @@ colors:
 #1793D9 - dark blue
 #CFBDA1 - brown
 */
-
-
-
-
-/*Navigation code*/
-.inline-block{
-    padding: 10px;
+body{
+    margin:0;
 }
-.inline-block ul{
-    padding: 10px;
-    text-align: right;
-}
-.inline-block li{
-    color: black;
-    margin: 5px;
-    list-style-type: none;
-    display: inline-block;
-}
-.inline-block a{
-    color: black;
-    text-decoration: none;
-}
-/*--------------------------------------------------*/
+/* ---------------------Naviagtion CSS------------------*/
+    nav{
+        background-color:#CFBDA1 ;
+    }
+    nav:after{
+        content: '';
+        display:block;
+        clear:both;
+    }
+    .logo, .menu{
+        display: inline-block;  
+    }
+    .logo{
+        margin: 20px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu{
+    
+        float: right;
+        margin: 20px;
+    }
+    .menu ul{
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    .menu ul li{
+        display:inline-block;
+        margin-right: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        padding: 20px 10px 20px 10px;
+        color: black;
+    }
+    .menu ul li a:hover{
+        background-color:#1793D9;
+        color: white;
+        transition: all 0.5s ease;
+    }
 
-/* Hero Image Code*/
-.heroImg{
- height: 600px;
- padding: 25px;
-}
-.content{
-    width:500px;
-    margin: 0 auto;
-}
-
-/*--------------------------------------------------*/
-
-/* Footer Code*/
-footer{
-    background-color:#CFBDA1;
-}
-
-footer ul{
-    padding: 10px;
-    text-align: center;
-}
-footer li{
-    color: black;
-    margin: 5px;
-    list-style-type: none;
-    display: inline-block;
-}
-footer a{
-    color:black;
-    text-decoration: none;
-}
-/*---------------------------------------------------*/
-
-/* Style MY UX Skills Section*/
-
-.flexContainer{
-    display:flex;
-
-}
+    /*----------------------HEADER SECTION--------------------*/
+    header{
+        background-image: url(../images/Hero\ Image.png);
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header p{
+        margin: 0;
+    }
+    .hero-container{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .button-work, .button-contact{
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: bold;
+        color: black;
+        padding: 10px 25px;  
+        display:inline-block; 
+        margin: 15px 10px;  
+    }
+    .button-work{
+        background-color:#CDDF5A ;     
+    } 
+    .button-work:hover{
+        background-color: black;
+        color: #CDDF5A;
+        transition: all 0.5 ease;
+    }
+    .button-contact{
+        background-color: #74CCFF;  
+    }
+    .button-contact:hover{
+        background-color: black;
+        color: #74CCFF;
+        transition: all 0.5 ease;
+    }
+    .hero-container p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: oblique;
+    }
+    .hero-container h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
